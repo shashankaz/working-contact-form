@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="left">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <h1>Get in touch</h1>
+          <hr />
+          <input
+            type="hidden"
+            name="access_key"
+            value="a504ef47-715c-40a1-bb8b-413da6757512"
+          />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div id="right"><img src="pngwing.com.png" alt="" /></div>
+    </div>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+  </body>
+</html>

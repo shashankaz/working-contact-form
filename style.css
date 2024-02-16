@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background: linear-gradient(#99bc85, #e1f0da);
+}
+
+#container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#left {
+  margin: 0 auto;
+}
+
+form h1 {
+  font-size: 3rem;
+}
+
+form hr {
+  height: 5px;
+  width: 120px;
+  border: none;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+form textarea {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  font-size: 0.9rem;
+}
+
+form button {
+  padding: 15px;
+  width: 100px;
+  border: none;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#right {
+  margin: 0 auto;
+}
+
+#right img {
+  height: 300px;
+  width: 300px;
+}
+
+@media (max-width: 760px) {
+  #right {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  form {
+    width: 300px;
+  }
+}
+
+@media (max-width: 350px) {
+  form {
+    width: 250px;
+  }
+
+  form h1 {
+    font-size: 2rem;
+  }
+
+  form hr {
+    width: 80px;
+  }
+
+  form input {
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+
+  form textarea {
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+
+  form button {
+    padding: 10px;
+    font-size: 0.6rem;
+    width: 70px;
+  }
+}
